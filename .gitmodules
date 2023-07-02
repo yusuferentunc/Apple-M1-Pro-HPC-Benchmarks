@@ -1,0 +1,3 @@
+[submodule "TheBandwidthBenchmark"]
+	path = TheBandwidthBenchmark
+	url = https://github.com/yusuferentunc/TheBandwidthBenchmark
