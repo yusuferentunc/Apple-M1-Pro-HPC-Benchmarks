@@ -1,3 +1,6 @@
 [submodule "TheBandwidthBenchmark"]
 	path = TheBandwidthBenchmark
 	url = https://github.com/yusuferentunc/TheBandwidthBenchmark
+[submodule "MD-Bench"]
+	path = MD-Bench
+	url = https://github.com/yusuferentunc/MD-Bench
