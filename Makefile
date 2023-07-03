@@ -4,7 +4,7 @@ POISSON = Poisson-Solver/2D-seq
 BANDWIDTH = TheBandwidthBenchmark
 
 micro:
-	make all -C MICRO
+	make -C MICRO
 
 nusif:
 	make -C $(NUSIF-2D)
@@ -27,7 +27,7 @@ bandwidth:
 
 all:
 	echo "MICRO Benchmark"
-	make micro
+#	make micro
 	echo "NuSiF Solver Benchmark"
 	make nusif 
 	echo "Poisson Solver Benchmark"

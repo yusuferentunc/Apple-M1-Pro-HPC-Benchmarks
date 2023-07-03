@@ -1,3 +1,8 @@
+all:
+	make vec-bench
+	make novec-bench
+	make plot
+
 vec:
 	clang -O3 -std=c99 -fopenmp -mcpu=apple-m1 -D_GNU_SOURCE -o micro-vec  micro.c
 
@@ -6,11 +11,11 @@ novec:
 
 vec-bench:
 	make vec
-	./bench.pl 1 seq vec> micro_bench_vec_seq.dat
+	./bench.pl 1 seq vec> m1-vec-seq.dat
 
 novec-bench:
 	make novec
-	./bench.pl 1 seq vec> micro_bench_vec_seq.dat
+	./bench.pl 1 seq vec> m1-novec-seq.dat
 
 plot:
 	gnuplot bench.plot
@@ -19,7 +24,5 @@ clean:
 	rm micro-vec
 	rm micro-novec
 
-all:
-	make novec-bench
-	make novec-bench
-	make plot
+
+
