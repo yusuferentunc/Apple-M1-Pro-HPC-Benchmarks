@@ -11,6 +11,7 @@ Only thing that may be change is `-mcpu=apple-m1` optimization flag at some benc
 - fopenmp
 
 ## Build and Run
+- After cloning the repository run `git submodule init` and `git submodule update` commands to activate submodules.
 - You can run all the benchmarks with `make all` command in the parent directory
 - Results can be found in `results` file
 - For the specific benchmark, you can check the details of makefile
